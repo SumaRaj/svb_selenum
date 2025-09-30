@@ -2,8 +2,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.svb.qa</groupId>
-  <artifactId>selenium-junit-restassured</artifactId>
+  <groupId>com.minimal</groupId>
+  <artifactId>minimal-qa</artifactId>
   <version>1.0.0</version>
 
   <properties>
@@ -19,6 +19,7 @@
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>${selenium.version}</version>
+      <scope>test</scope>
     </dependency>
 
     <dependency>

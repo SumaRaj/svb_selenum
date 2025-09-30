@@ -1,4 +1,4 @@
-package com.svb.qa;
+package com.minimal;
 
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.Test;
@@ -6,11 +6,10 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class ApiBasicsTest {
+class ApiSmokeTest {
     @Test
-    void getPost_shouldReturn200AndValidateBody() {
+    void getPost_returns200AndValidFields() {
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
-
         given()
             .log().uri()
         .when()
